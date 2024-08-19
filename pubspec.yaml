@@ -6,7 +6,9 @@ version: 1.0.0
 environment:
   sdk: ^3.3.3
 
-# Add regular dependencies here.
+executables:
+  uploader:
+
 dependencies:
   http: ^1.2.2
   googleapis_auth: ^1.6.0
