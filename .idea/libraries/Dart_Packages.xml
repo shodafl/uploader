@@ -103,7 +103,7 @@
         <entry key="googleapis">
           <value>
             <list>
-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/googleapis-13.1.0/lib" />
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/googleapis-13.2.0/lib" />
             </list>
           </value>
         </entry>
@@ -390,7 +390,7 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/frontend_server_client-4.0.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/glob-2.1.2/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/google_identity_services_web-0.3.1+4/lib" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/googleapis-13.1.0/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/googleapis-13.2.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/googleapis_auth-1.6.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/http-1.2.2/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1/lib" />

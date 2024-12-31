@@ -12,7 +12,7 @@ executables:
 dependencies:
   http: ^1.2.2
   googleapis_auth: ^1.6.0
-  googleapis: ^13.1.0
+  googleapis: ^13.2.0
 
 dev_dependencies:
   lints: ^3.0.0
