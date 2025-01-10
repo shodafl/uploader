@@ -49,7 +49,7 @@ Future<void> main(List<String> arguments) async {
     print('Finished uploading bundle');
     print('Started commiting edit');
 
-    await appPublisher.edits.commit(packageName, editId, changesNotSentForReview: true);
+    await appPublisher.edits.commit(packageName, editId);
     print('Finished commiting edit');
 
     exit(0);
