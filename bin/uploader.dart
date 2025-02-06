@@ -15,6 +15,8 @@ Future<void> main(List<String> arguments) async {
   final packageName = arguments[0];
   final bundleFilePath = arguments[1];
   final jsonKeyFilePath = arguments[2];
+  final changesNotSentForReview =
+      arguments.length > 3 ? arguments[3] as bool : false;
 
   try {
     final jsonKey = File(jsonKeyFilePath).readAsStringSync();
@@ -49,7 +51,11 @@ Future<void> main(List<String> arguments) async {
     print('Finished uploading bundle');
     print('Started commiting edit');
 
-    await appPublisher.edits.commit(packageName, editId);
+    await appPublisher.edits.commit(
+      packageName,
+      editId,
+      changesNotSentForReview: changesNotSentForReview,
+    );
     print('Finished commiting edit');
 
     exit(0);
