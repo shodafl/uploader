@@ -6,7 +6,7 @@ import 'package:googleapis/androidpublisher/v3.dart';
 Future<void> main(List<String> arguments) async {
   const scopes = ['https://www.googleapis.com/auth/androidpublisher'];
 
-  if (arguments.length != 3) {
+  if (arguments.length < 3) {
     throw ArgumentError(
       'You should pass arguments in order: [packageName] [bundleFilePath] [jsonKeyFilePath]',
     );
@@ -16,7 +16,7 @@ Future<void> main(List<String> arguments) async {
   final bundleFilePath = arguments[1];
   final jsonKeyFilePath = arguments[2];
   final changesNotSentForReview =
-      arguments.length > 3 ? arguments[3] as bool : false;
+      bool.tryParse(arguments.length > 3 ? arguments[3] : 'true');
 
   try {
     final jsonKey = File(jsonKeyFilePath).readAsStringSync();

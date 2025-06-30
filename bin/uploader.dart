@@ -16,7 +16,7 @@ Future<void> main(List<String> arguments) async {
   final bundleFilePath = arguments[1];
   final jsonKeyFilePath = arguments[2];
   final changesNotSentForReview =
-      arguments.length > 3 ? arguments[3] as bool : false;
+      bool.tryParse(arguments.length > 3 ? arguments[3] : 'true');
 
   try {
     final jsonKey = File(jsonKeyFilePath).readAsStringSync();

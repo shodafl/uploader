@@ -1,19 +1,18 @@
 name: uploader
-description: A sample command-line application.
-version: 1.0.5
-# repository: https://github.com/my_org/my_repo
+description: A Dart script for uploading Android App Bundles to Google Play
+version: 1.0.0
 
 environment:
-  sdk: ^3.3.3
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  googleapis: ^11.4.0
+  googleapis_auth: ^1.4.1
+
+dev_dependencies:
+  test: ^1.24.3
+  mockito: ^5.4.2
+  build_runner: ^2.4.6
 
 executables:
   uploader:
-
-dependencies:
-  http: ^1.2.2
-  googleapis_auth: ^1.6.0
-  googleapis: ^13.2.0
-
-dev_dependencies:
-  lints: ^3.0.0
-  test: ^1.24.0
